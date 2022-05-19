@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Funciones jQuery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mindicador.html">Indicadores Económicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokemon.html">Pokemon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openweathermap.html">Api Clima</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <a class="link_interno" href="index.html">Volver al inicio</a>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .click</h2>
+                <button class="btn btn-outline-primary" type="button" id="accion01">Click aquí!!!</button>
+            </div>
+            <div class="col-sm-6">
+                <p>Quieres conocer la resolución de tu pantalla: </p>
+                <p id="resolucion"></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .hide y .show</h2>
+                <button id="accion02" class="btn btn-outline-info">Presiona para ocultar el párrafo</button>
+                <button id="accion03" class="btn btn-outline-info">Presiona para mostrar el párrafo</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion02">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, ea harum quas ab blanditiis repellat et neque consequuntur, recusandae in deserunt explicabo deleniti ullam voluptatem corrupti, distinctio voluptates itaque. Fugit explicabo illo voluptatum natus facere quam fugiat eveniet? Asperiores cupiditate deleniti placeat quisquam inventore eligendi quasi cumque assumenda et molestias laborum voluptatibus vitae recusandae, ratione reiciendis nulla saepe rerum repudiandae porro fugit aliquid temporibus minus error corporis. Sapiente, tenetur obcaecati! Adipisci, eum omnis dolor voluptate sint repellendus ipsum minus amet, quam ratione aut tempore magnam. Quo fugiat, odit incidunt laborum quisquam, expedita enim officia eaque assumenda, minima iste eum iure?</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .toggle</h2>
+                <button id="accion04" class="btn btn-outline-dark">Togglear una imagen</button>
+            </div>
+            <div class="col-sm-6">
+                <img id="imagen-accion04" src="http://picsum.photos/200/200" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .slideDown</h2>
+                <button id="accion05" class="btn btn-outline-warning">slideDownear una imagen</button>
+            </div>
+            <div class="col-sm-6">
+                <img class="imagen-oculta" id="imagen-accion05" src="http://picsum.photos/200/200" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .slideUp</h2>
+                <button id="accion06" class="btn btn-outline-danger">slideUpear una imagen</button>
+            </div>
+            <div class="col-sm-6">
+                <img id="imagen-accion06" src="http://picsum.photos/200/200" alt="">
+            </div>
+        </div>
+        <hr>  
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función .slideToggle</h2>
+                <button id="accion07" class="btn btn-outline-danger">slideTogglear un elemento</button>
+            </div>
+            <div class="col-sm-6">
+                <ul id="lista-accion07">
+                    <li>Brasil</li>
+                    <li>Argentina</li>
+                    <li>Uruguay</li>
+                    <li>Ecuador</li>
+                    <li>Perú</li>
+                </ul>
+            </div>
+        </div>  
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo función addClass</h2>
+                <button id="accion08_1" class="btn btn-outline-danger">Agregar text-danger</button>
+                <button id="accion08_2" class="btn btn-outline-primary">Agregar estilo italic</button>
+                <button id="accion08_3" class="btn btn-outline-success">Remover todas los estilos</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion08">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit hic magni quam ad temporibus! Adipisci mollitia laborum optio rem totam.</p>
+            </div>
+        </div>  
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo Función .before</h2>
+                <button id="accion09" class="btn btn-outline-danger">Presioname para ver que sucede</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion09">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo Función .after</h2>
+                <button id="accion10" class="btn btn-outline-success">Presioname para ver que sucede</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo Función .append</h2>
+                <button id="accion11" class="btn btn-outline-primary">Presioname para ver que sucede</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion11">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Manejo Función .html</h2>
+                <button id="accion12" class="btn btn-outline-info">Presioname para ver que sucede</button>
+            </div>
+            <div class="col-sm-6">
+                <p id="parrafo-accion12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, impedit.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <!-- jQuery, Popper, Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Script propios -->
+    <script src="assets/js/jqueries.js"></script>
+</body>
+</html>

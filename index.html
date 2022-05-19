@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Intro jQuery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Functions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mindicador.html">Indicadores Económicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokemon.html">Pokemon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="openweathermap.html">Api Clima</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container bg-dark text-white text-center py-5">
+        <h1 id="titulo">Introducción a jQuery</h1>
+    </div>
+    <div class="container mt-4 mb-4">
+        <h1>Presioname!!</h1>
+        <h1>Bienvenidos</h1>
+        <h2>Presioname también!!</h2>
+        <hr>
+        <ul>
+            <li><a class="link_externo" href="http://www.google.com" >Google</a></li>
+            <li><a class="link_externo" href="http://www.duoc.cl" >DUOC</a></li>
+            <li><a class="link_interno" href="funciones.html" >Funciones</a></li>
+        </ul>
+        <hr>
+        <button class="btn btn-outline-warning" id="encender" type="button">Encender</button>
+        <img id="img-ampolleta" src="assets/img/pic_bulboff.gif" alt="Luz apagada">
+        <button class="btn btn-outline-dark" id="apagar" type="button">Apagar</button>
+        <hr>
+        <h4 id="text-hover">Acerca el mouse!!!</h4>
+        <h4>Este párrafo viene despues del mensaje anterior</h4>
+        <hr>
+        <input type="text" id="frase" name="frase" class="form-control mb-3" placeholder="Ingresa una frase" maxlength="50" size="30">
+        <button class="btn btn-outline-success" id="button01">Presioname</button>
+        <p id="frase-ingresada"></p>
+        <hr>
+        <p class="texto-rojo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, hic ipsam. Nam, debitis asperiores dolor libero a vel necessitatibus accusamus!</p>
+        <p >
+            <ul class="texto-rojo">
+                <li>Chile</li>
+                <li>Argentina</li>
+                <li>Brasil</li>
+            </ul>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="texto-rojo">Magnam enim necessitatibus in similique quasi minima repellendus</span> sequi odio itaque molestias.</p>
+        <button class="btn btn-outline-danger" type="button" id="button02">Presionar!!!</button>
+    </div>
+
+    <!-- jQuery, Popper, Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Script propios -->
+    <script src="assets/js/jqueries.js"></script>
+</body>
+</html>
